@@ -1,17 +1,18 @@
 # include <stdio.h>
 
 int main() { 
-int n,row,column,sum,current_element; 
+int n,row,column,current_element;
+float sum;
 
 //Size of matrix 
 	scanf("%d",&n); 
 		if (0>n>100) { printf("error\n"); } 
 
 //Input for numbers 
-int arr[n][n];
+float arr[n][n];
 	for(row=0;row<n;row++){
 	 for(column=0;column<n;column++){ 
-		scanf("%d", &arr[row][column]); } 
+		scanf("%f", &arr[row][column]); } 
 }
  
 //Summing the numbers 
@@ -23,6 +24,6 @@ int arr[n][n];
 } 
 
 //Printing the sum of the numbers above the main diagonal of the matrix 
-	printf("%d\n",sum); 
+	printf("%f\n",sum); 
 return 0; 
 }
